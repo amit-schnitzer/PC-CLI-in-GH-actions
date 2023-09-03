@@ -6,6 +6,7 @@ on:
 jobs:
   prismacloud-cli:
     runs-on: ubuntu-latest
+    environment: pc-cli-environment
     env:
       PC_ACCESS_KEY: ${{ secrets.PC_ACCESS_KEY }}
       PC_SAAS_API_ENDPOINT: ${{ secrets.PC_SAAS_API_ENDPOINT }}
